@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <h1>Welcome to My Portfolio</h1>
+  </title>
+  <style>
+    title{
+      font-family: sans-serif;
+      text-align: center;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url("bg-image.jpg");
+      background-size:cover ;
+      text-align: center;
+    }
+
+    header {
+      background-color:rgb(245, 232, 217);
+      background-size: cover;
+      padding-left: 350px;
+      text-align: center;
+    }
+
+    header h1 {
+      display: inline-block;
+    }
+
+    header nav {
+      float: right;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-right: 20px;
+      color: black;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact ul li {
+      margin-bottom: 5px;
+    }
+    .certificate-box img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 5px;
+    }
+    .certificate-box {
+       width: calc(33.33% - 20px); /* Adjust the width to fit three boxes in a row */
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+  margin-right: 20px; /* Add some margin between boxes */
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .certificate-box {
+    width: calc(50% - 20px); /* Adjust width for smaller screens to fit two boxes in a row */
+  }
+}
+
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .skill-box {
+      width: 30%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .skill-box img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>I am G.Lakshmi Jahnavi.</h2><br>
+    <h3>This is My First Portfolio.This is where u can learn more about me.</h3>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm G.LAKSHMI JAHNAVI pursuing my B.E in CSE-AIML (Computer Science Engineering with Artificial Intelligence and Machine Learning) at Chaitanya Bharathi Institute of Technology, Gandipet. </p>
+      <h3>Education</h3>
+      <ul>
+        <li>Secondary Education-New Era High School,Khammam,GPA-10</li>
+        <li>Intermediate-New Vision Junior College,Khammam,Percentage-98.2%,EAMCET RANK-6813</li>
+        <li>Currently pursuing B.E 2nd year in CSE-AIML dept at Chaitanya Bharathi Institute Of Technology</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <a href="https://www.python.org/">
+            <img src="python.png" alt="Python Logo">
+          </a>
+          <h3>Python</h3>
+          <p>Proficient in data manipulation, scripting, and machine learning applications.</p>
+        </div>
+        <div class="skill-box">
+          <a href="https://www.w3schools.com/css/">
+            <img src="css.png" alt="CSS Logo">
+          </a>
+          <h3>CSS</h3>
+          <p>Skilled in styling web pages and creating responsive layouts.</p>
+        </div>
+        <div class="skill-box">
+          <a href="https://www.w3schools.com/html/">
+            <img src="html.png" alt="HTML Logo">
+          </a>
+          <h3>HTML</h3>
+          <p>Solid understanding of web page structure and development.</p>
+        </div>
+      </div>
+      <p>Also includes Skills like Data Structures,DBMS,Data Science</p>
+    </section>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificates-container">
+          <div class="certificate-box">
+            <h3>Certificate Name 1</h3>
+            <p>DATA SCIENCE Certification From Internshala</p>
+            <img src="certificate-1.png" alt="DATA SCIENCE">
+          </div>
+          <div class="certificate-box">
+            <h3>Certificate Name 2</h3>
+            <p>AI FOUNDATION Certification From Li2 Organization</p>
+            <img src="certificate-2.png" alt="AI FOUNDATION">
+          </div>
+          <div class="certificate-box">
+            <h3>Certificate Name 3</h3>
+            <p>AI ADVANCE Certification From Li2 Organization</p>
+            <img src="certificate-3.png" alt="AI ADVANCE">
+          </div>
+        </div>
+      </section>  
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+          <ul>
+            <li>Email:ljahnavi92@gmail.com</li>
+            <li>Phone:7032629551</li>
+            <li>Address:Gandipet,Hyderabad,India</li>
+          </ul>
+        </div>
+      </section>      
+  </main>
+  <footer>
+    <p>&copy; 2024 G.Lakshmi Jahnavi - All rights reserved</p>
+  </footer>
+  
+</body>
+</html>
